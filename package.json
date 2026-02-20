@@ -1,0 +1,25 @@
+{
+  "name": "pizza-delivery",
+  "version": "1.0.0",
+  "description": "SliceNow - Pizza delivery app inspired by Just Eat",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm run build",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "node server/index.js",
+    "install:client": "cd client && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:36863/git/lorenzojones/pizza-delivery"
+  },
+  "keywords": ["pizza", "delivery", "svelte", "express"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "uuid": "^13.0.0"
+  }
+}
