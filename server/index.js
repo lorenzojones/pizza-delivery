@@ -18,6 +18,15 @@ const orders = new Map();
 
 // --- API Routes ---
 
+// Health check
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString()
+  });
+});
+
 // Get all restaurants (supports search & filter)
 app.get('/api/restaurants', (req, res) => {
   const { q, cuisine, sort, minRating } = req.query;
