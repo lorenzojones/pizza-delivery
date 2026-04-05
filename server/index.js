@@ -168,6 +168,6 @@ app.get('/{*splat}', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'client', 'public', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Pizza Delivery API running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Pizza Delivery API running on http://0.0.0.0:${PORT}`);
 });
