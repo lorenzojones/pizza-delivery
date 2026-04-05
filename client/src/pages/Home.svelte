@@ -1,154 +1,239 @@
 <script>
   import { push } from 'svelte-spa-router';
-
-  let postcode = '';
-
-  function handleSearch() {
-    push('/restaurants' + (postcode ? `?q=${encodeURIComponent(postcode)}` : ''));
-  }
 </script>
 
 <!-- Hero Section -->
-<div class="bg-je-orange">
-  <div class="max-w-7xl mx-auto px-4 py-16 md:py-24">
+<div class="relative overflow-hidden wave-divider" style="background: linear-gradient(135deg, #2B8A9E 0%, #1E6F80 50%, #F4845F 100%);">
+  <div class="max-w-7xl mx-auto px-4 py-20 md:py-32 relative z-10">
     <div class="max-w-2xl">
-      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
-        Your favourite pizza,<br/>delivered.
+      <p class="text-white/80 text-sm font-bold uppercase tracking-widest mb-3">Sayulita, Mexico</p>
+      <h1 class="font-display text-5xl md:text-7xl text-white leading-tight mb-2">
+        Eno's Shack
       </h1>
-      <p class="text-white/90 text-lg mt-4 mb-8">
-        Order from the best local pizzerias with fast delivery to your door.
+      <p class="font-surf text-xl md:text-2xl text-mango mb-4">
+        Fresh Juice & Good Vibes 🤙
+      </p>
+      <p class="text-white/90 text-lg mb-8 max-w-lg">
+        Hand-pressed fruit juices, smoothie bowls & tropical blends made fresh daily from local Nayarit fruit.
       </p>
 
-      <!-- Search bar -->
-      <form on:submit|preventDefault={handleSearch} class="flex gap-2">
-        <div class="flex-1 relative">
-          <svg class="w-5 h-5 text-je-grey absolute left-4 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-          </svg>
-          <input
-            type="text"
-            bind:value={postcode}
-            placeholder="Enter your postcode"
-            class="w-full pl-12 pr-4 py-4 rounded-xl text-base border-0 outline-none focus:ring-2 focus:ring-je-green shadow-lg"
-          />
-        </div>
-        <button
-          type="submit"
-          class="bg-je-green hover:bg-je-green-dark text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-base"
-        >
-          Find food
-        </button>
-      </form>
+      <button
+        on:click={() => push('/menu')}
+        class="bg-sunset hover:bg-sunset-dark text-white font-extrabold px-8 py-4 rounded-2xl shadow-lg transition text-lg inline-flex items-center gap-2"
+      >
+        See the Menu 🍹
+      </button>
     </div>
   </div>
+
+  <!-- Decorative elements -->
+  <div class="absolute top-10 right-10 text-8xl opacity-20 animate-sway hidden md:block">🌴</div>
+  <div class="absolute bottom-20 right-32 text-6xl opacity-15 animate-float hidden md:block">🏄</div>
 </div>
 
-<!-- Cuisine categories -->
+<!-- Juice categories -->
 <div class="max-w-7xl mx-auto px-4 py-12">
-  <h2 class="text-2xl font-bold text-je-dark mb-6">Popular cuisines</h2>
-  <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
-    {#each cuisines as cuisine}
+  <h2 class="text-2xl font-bold text-driftwood mb-2">What's your vibe?</h2>
+  <p class="text-driftwood-mid mb-6">Choose your wave, we'll blend the rest.</p>
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+    {#each categories as cat}
       <button
-        on:click={() => push(`/restaurants?cuisine=${cuisine.name}`)}
-        class="flex flex-col items-center gap-3 p-4 bg-white rounded-xl hover:shadow-md transition group"
+        on:click={() => push('/menu')}
+        class="flex flex-col items-center gap-3 p-5 bg-white rounded-2xl border border-sand hover:border-ocean/30 hover:shadow-lg transition group"
       >
-        <span class="text-4xl">{cuisine.emoji}</span>
-        <span class="text-sm font-medium text-je-dark group-hover:text-je-orange transition">{cuisine.name}</span>
+        <span class="text-4xl group-hover:animate-float">{cat.emoji}</span>
+        <span class="text-sm font-bold text-driftwood group-hover:text-ocean transition">{cat.name}</span>
       </button>
     {/each}
   </div>
 </div>
 
-<!-- How it works -->
+<!-- About / Story section -->
 <div class="bg-white py-12">
   <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-2xl font-bold text-je-dark mb-8 text-center">How it works</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      {#each steps as step, i}
-        <div class="text-center">
-          <div class="w-16 h-16 bg-je-orange-light rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <span class="text-je-orange text-2xl font-extrabold">{i + 1}</span>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-surf text-3xl text-ocean mb-4">Born on the Beach</h2>
+        <p class="text-driftwood-mid leading-relaxed mb-4">
+          Eno's Shack started as a tiny stand on the Sayulita beach break. Every morning, we hit the waves at dawn, then head to the market for the freshest Nayarit fruit — mangos from La Cruz, papayas from San Pancho, pineapples straight from the campo.
+        </p>
+        <p class="text-driftwood-mid leading-relaxed mb-4">
+          No artificial anything. No frozen concentrates. Just real fruit, real vibes, and that barefoot Sayulita feeling in every sip.
+        </p>
+        <div class="flex gap-4 mt-6">
+          <div class="text-center">
+            <span class="text-3xl font-extrabold text-ocean">100%</span>
+            <p class="text-xs text-driftwood-mid mt-1">Natural</p>
           </div>
-          <h3 class="font-bold text-je-dark mb-2">{step.title}</h3>
-          <p class="text-je-grey text-sm">{step.desc}</p>
+          <div class="text-center">
+            <span class="text-3xl font-extrabold text-sunset">Local</span>
+            <p class="text-xs text-driftwood-mid mt-1">Nayarit Fruit</p>
+          </div>
+          <div class="text-center">
+            <span class="text-3xl font-extrabold text-palm">Daily</span>
+            <p class="text-xs text-driftwood-mid mt-1">Fresh Pressed</p>
+          </div>
         </div>
-      {/each}
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-gradient-to-br from-ocean-light to-ocean/10 rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+          <span class="text-5xl mb-2">🌊</span>
+          <span class="font-surf text-ocean text-sm">Surf & Sip</span>
+        </div>
+        <div class="bg-gradient-to-br from-sunset-light to-sunset/10 rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+          <span class="text-5xl mb-2">🥭</span>
+          <span class="font-surf text-sunset text-sm">Tropical Blends</span>
+        </div>
+        <div class="bg-gradient-to-br from-palm-light to-palm/10 rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+          <span class="text-5xl mb-2">🥬</span>
+          <span class="font-surf text-palm text-sm">Green Cleanses</span>
+        </div>
+        <div class="bg-gradient-to-br from-papaya to-mango/20 rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+          <span class="text-5xl mb-2">🫐</span>
+          <span class="font-surf text-driftwood text-sm">Açaí Bowls</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- App download CTA -->
+<!-- How it works -->
 <div class="max-w-7xl mx-auto px-4 py-12">
-  <div class="bg-je-dark rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-    <div class="flex-1">
-      <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Get the SliceNow app</h2>
-      <p class="text-gray-400 mb-6">Order even faster with our mobile app. Track your delivery in real time.</p>
-      <div class="flex gap-3">
-        <button class="bg-white text-je-dark font-semibold px-6 py-3 rounded-lg text-sm hover:bg-gray-100 transition">
-          App Store
-        </button>
-        <button class="bg-white text-je-dark font-semibold px-6 py-3 rounded-lg text-sm hover:bg-gray-100 transition">
-          Google Play
-        </button>
+  <h2 class="text-2xl font-bold text-driftwood mb-8 text-center">How It Works</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    {#each steps as step, i}
+      <div class="text-center">
+        <div class="w-16 h-16 bg-ocean-light rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <span class="text-3xl">{step.emoji}</span>
+        </div>
+        <h3 class="font-bold text-driftwood mb-2">{step.title}</h3>
+        <p class="text-driftwood-mid text-sm">{step.desc}</p>
+      </div>
+    {/each}
+  </div>
+</div>
+
+<!-- Popular items teaser -->
+<div class="bg-gradient-to-r from-ocean to-ocean-dark py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1 text-white">
+        <h2 class="font-surf text-3xl mb-3">Today's Best Sellers</h2>
+        <p class="text-white/80 mb-6">Fresh pressed this morning. Get yours before they're gone.</p>
+        <div class="flex flex-wrap gap-3">
+          {#each bestSellers as item}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center gap-2">
+              <span class="text-xl">{item.emoji}</span>
+              <div>
+                <p class="font-bold text-white text-sm">{item.name}</p>
+                <p class="text-white/70 text-xs">${item.price} MXN</p>
+              </div>
+            </div>
+          {/each}
+        </div>
+      </div>
+      <button
+        on:click={() => push('/menu')}
+        class="bg-sunset hover:bg-sunset-dark text-white font-bold px-8 py-4 rounded-2xl shadow-lg transition text-lg whitespace-nowrap"
+      >
+        Order Now 🏄
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Location & Hours -->
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="bg-white rounded-2xl shadow-lg border border-sand overflow-hidden">
+    <div class="grid md:grid-cols-2">
+      <div class="p-8">
+        <h2 class="font-surf text-2xl text-ocean mb-4">Find Us</h2>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <span class="text-xl">📍</span>
+            <div>
+              <p class="font-bold text-driftwood">Calle Delfines 12</p>
+              <p class="text-sm text-driftwood-mid">Sayulita, Nayarit, Mexico 63734</p>
+              <p class="text-sm text-driftwood-mid">Just steps from the main beach break</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl">🕐</span>
+            <div>
+              <p class="font-bold text-driftwood">Open Daily</p>
+              <p class="text-sm text-driftwood-mid">7:00 AM — 5:00 PM</p>
+              <p class="text-sm text-palm font-semibold">Open now</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl">📱</span>
+            <div>
+              <p class="font-bold text-driftwood">Contact</p>
+              <p class="text-sm text-driftwood-mid">Walk in, or order ahead for pickup!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-br from-ocean-light to-sand p-8 flex items-center justify-center">
+        <div class="text-center">
+          <span class="text-7xl block mb-4 animate-sway">🏖️</span>
+          <p class="font-display text-2xl text-ocean">See you on the beach!</p>
+        </div>
       </div>
     </div>
-    <div class="text-8xl">📱🍕</div>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="bg-je-dark text-white py-12 mt-8">
+<footer class="bg-driftwood text-white py-12">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="grid md:grid-cols-4 gap-8">
+    <div class="grid md:grid-cols-3 gap-8">
       <div>
-        <h3 class="font-bold text-lg mb-4">SliceNow</h3>
-        <p class="text-gray-400 text-sm">The best pizza delivery in your area. Fresh, fast, delicious.</p>
+        <h3 class="font-display text-2xl mb-3">Eno's Shack</h3>
+        <p class="text-gray-400 text-sm">Fresh fruit juices & smoothie bowls in Sayulita, Mexico. Made with love, local fruit, and good vibes.</p>
       </div>
       <div>
-        <h4 class="font-semibold mb-3 text-sm">Discover</h4>
+        <h4 class="font-bold mb-3 text-sm">Quick Links</h4>
         <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="#/restaurants" class="hover:text-white transition no-underline text-gray-400">Restaurants</a></li>
-          <li><a href="#/" class="hover:text-white transition no-underline text-gray-400">Top cuisines</a></li>
-          <li><a href="#/" class="hover:text-white transition no-underline text-gray-400">Offers</a></li>
+          <li><a href="#/menu" class="hover:text-mango transition no-underline text-gray-400">Full Menu</a></li>
+          <li><a href="#/" class="hover:text-mango transition no-underline text-gray-400">Our Story</a></li>
+          <li><a href="#/" class="hover:text-mango transition no-underline text-gray-400">Catering</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold mb-3 text-sm">Company</h4>
+        <h4 class="font-bold mb-3 text-sm">Sayulita Life</h4>
         <ul class="space-y-2 text-sm text-gray-400">
-          <li>About us</li>
-          <li>Careers</li>
-          <li>Blog</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold mb-3 text-sm">Help</h4>
-        <ul class="space-y-2 text-sm text-gray-400">
-          <li>Contact</li>
-          <li>FAQs</li>
-          <li>Terms & Conditions</li>
+          <li>Surf Reports</li>
+          <li>Local Events</li>
+          <li>Community Board</li>
         </ul>
       </div>
     </div>
     <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-xs">
-      © 2026 SliceNow. All rights reserved. This is a demo application.
+      © 2026 Eno's Shack, Sayulita. All rights reserved. 🌴🤙🏄
     </div>
   </div>
 </footer>
 
 <script context="module">
-  const cuisines = [
-    { name: 'Pizza', emoji: '🍕' },
-    { name: 'Italian', emoji: '🇮🇹' },
-    { name: 'American', emoji: '🇺🇸' },
-    { name: 'Kebab', emoji: '🥙' },
-    { name: 'Gourmet', emoji: '👨‍🍳' },
-    { name: 'Desserts', emoji: '🍰' },
+  const categories = [
+    { name: 'Signature Juices', emoji: '🍹' },
+    { name: 'Smoothie Bowls', emoji: '🥣' },
+    { name: 'Smoothies', emoji: '🥤' },
+    { name: 'Fresh Pressed', emoji: '🍊' },
+    { name: 'Extras', emoji: '✨' },
   ];
 
   const steps = [
-    { title: 'Choose a restaurant', desc: 'Browse local pizza restaurants near you and discover new favourites.' },
-    { title: 'Pick your food', desc: 'Build your perfect order from the menu. Add sides, drinks, and desserts.' },
-    { title: 'Fast delivery', desc: 'Sit back and relax. Track your order in real time until it arrives.' },
+    { title: 'Pick your juice', desc: 'Browse our menu of fresh-pressed juices, smoothie bowls & tropical blends.', emoji: '🍹' },
+    { title: 'We blend it fresh', desc: 'Every drink is made to order with fruit from the morning market.', emoji: '🔪' },
+    { title: 'Grab & enjoy', desc: 'Pick up at the shack and enjoy with your toes in the sand.', emoji: '🏖️' },
+  ];
+
+  const bestSellers = [
+    { name: 'Sayulita Sunrise', emoji: '🌅', price: 85 },
+    { name: 'Pipeline Punch', emoji: '🏄', price: 90 },
+    { name: 'Acai Shack Bowl', emoji: '🫐', price: 120 },
+    { name: 'Ginger Shot', emoji: '🔥', price: 45 },
   ];
 </script>
