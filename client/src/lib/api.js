@@ -35,3 +35,25 @@ export async function fetchOrder(id) {
   if (!res.ok) throw new Error('Order not found');
   return res.json();
 }
+
+export async function subscribeToCrm({ email, name }) {
+  const res = await fetch(`${API_BASE}/crm/subscribe`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, name })
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || 'Failed to subscribe');
+  return data;
+}
+
+export async function unsubscribeFromCrm(email) {
+  const res = await fetch(`${API_BASE}/crm/unsubscribe`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email })
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || 'Failed to unsubscribe');
+  return data;
+}

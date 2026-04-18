@@ -3,6 +3,8 @@ const cors = require('cors');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const restaurants = require('./data/restaurants.json');
+const crm = require('./services/emailCrm');
+const crmRoutes = require('./routes/crm');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -124,6 +126,14 @@ app.post('/api/orders', (req, res) => {
 
   orders.set(order.id, order);
 
+  crm.addOrUpdateContact(customer.email, {
+    name: customer.name,
+    phone: customer.phone,
+    marketingOptIn: req.body.marketingOptIn ?? false,
+  });
+  crm.recordOrder(customer.email, total);
+  crm.sendOrderConfirmation(order);
+
   // Simulate order progress
   simulateOrderProgress(order.id);
 
@@ -162,6 +172,9 @@ function simulateOrderProgress(orderId) {
     }, delay);
   });
 }
+
+// CRM routes
+app.use('/api/crm', crmRoutes);
 
 // SPA fallback - serve index.html for all non-API routes
 app.get('/{*splat}', (req, res) => {

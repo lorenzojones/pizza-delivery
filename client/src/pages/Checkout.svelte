@@ -6,6 +6,7 @@
   let customer = { name: '', email: '', phone: '' };
   let address = { line1: '', line2: '', city: 'London', postcode: '' };
   let paymentMethod = 'card';
+  let marketingOptIn = true;
   let submitting = false;
   let error = null;
 
@@ -26,7 +27,8 @@
         items: $cart.items.map(i => ({ id: i.id, name: i.name, price: i.price, quantity: i.quantity })),
         customer,
         address: `${address.line1}${address.line2 ? ', ' + address.line2 : ''}, ${address.city}, ${address.postcode}`,
-        paymentMethod
+        paymentMethod,
+        marketingOptIn
       });
 
       cart.clear();
@@ -115,6 +117,13 @@
                   class="w-full px-4 py-3 rounded-lg border border-je-grey-border focus:border-je-orange focus:ring-1 focus:ring-je-orange outline-none text-sm" placeholder="07123 456789" />
               </div>
             </div>
+            <label class="flex items-start gap-3 mt-4 cursor-pointer">
+              <input type="checkbox" bind:checked={marketingOptIn}
+                class="mt-0.5 w-4 h-4 accent-je-orange" />
+              <span class="text-sm text-je-grey">
+                Send me exclusive deals, new restaurant alerts, and tasty offers by email. You can unsubscribe at any time.
+              </span>
+            </label>
           </div>
 
           <!-- Payment -->
