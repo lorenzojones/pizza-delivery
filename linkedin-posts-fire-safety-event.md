@@ -7,136 +7,195 @@ Post one per day, starting seven days before the show opens.
 
 ## Day 7 — The Countdown Begins
 
-**We're exhibiting at the Fire Safety Event Show — and we can't wait.**
+**One week.**
 
-In exactly one week, the Vent Trade team will be on the show floor at the NEC Birmingham, talking about the thing we care most about: keeping people safe when it matters most.
+Seven days until we're on the floor at the Fire Safety Event Show — and honestly, we've been looking forward to this one for months.
 
-Fire safety ventilation is one of those topics that sits quietly in the background — until it doesn't. Smoke control systems, fire dampers, AOV solutions — the decisions made at the design and specification stage can be the difference between a manageable incident and a catastrophe.
+Because here's the thing about fire safety ventilation:
 
-We'll be there to talk through the real-world challenges: retrofit projects, compliance questions, system integration, the gaps that still exist between design intent and installed reality.
+Nobody thinks about it.
 
-If you're attending, come and find us. If you're not yet registered, now's the time.
+Until a building fills with smoke.
+Until a stairwell becomes a chimney.
+Until the system that was supposed to buy people time to escape... doesn't.
 
-We'll share our stand details later this week.
+Smoke control, fire dampers, AOV systems — these aren't just products in a catalogue. They're the difference between a fire that's managed and a fire that kills.
+
+That's the conversation we're going to the NEC to have.
+
+Not the polished-brochure version. The real one — about the gap between what gets specified, what gets installed, and what actually performs on the day it's needed most.
+
+If you're going to be at the Fire Safety Event Show, find us. Bring your hardest questions.
+
+We'll be ready.
+
+Stand details to follow. 👇
 
 #FireSafetyEvent #VentTrade #SmokeControl #FireSafety #BuildingSafety
 
 ---
 
-## Day 6 — The Problem Nobody Talks About Enough
+## Day 6 — The Uncomfortable Truth
 
-**Fire dampers are installed. But are they maintained?**
+**Somewhere in a building near you, there's a fire damper that has never been tested.**
 
-Studies continue to show that a significant proportion of fire dampers in UK buildings are either not being tested at all, or failing their inspections when they are.
+Not once.
 
-A fire damper that hasn't been tested is not a safety feature — it's a liability hiding in a duct.
+It was installed. It was signed off. It sat inside a duct and collected dust.
 
-The Regulatory Reform (Fire Safety) Order is clear. Responsible persons have a duty. But awareness, resource, and access all create real barriers — especially in occupied buildings and complex estates.
+And the responsible person for that building has no idea.
 
-This week at the Fire Safety Event Show, we'll be talking about practical approaches to damper inspection and maintenance programmes that actually work. No jargon. No sales pitch. Just honest conversation about what's needed.
+This isn't a rare edge case. It's widespread. Survey after survey tells the same story: fire dampers across the UK estate are untested, inaccessible, or failing when inspectors finally do check them.
 
-Are you managing a building portfolio? Come and talk to us.
+A damper that hasn't been tested isn't a safety feature.
 
-#FireDampers #FireSafety #ComplianceMatters #VentTrade #FireSafetyEvent
+It's a false promise — buried in a ceiling void, waiting.
 
----
+The Regulatory Reform (Fire Safety) Order puts the duty squarely on responsible persons. But knowing you have a duty and knowing how to fulfil it across a complex, occupied building estate are two very different things.
 
-## Day 5 — Meet the Team
+This week at the Fire Safety Event Show, we're not going to talk at people about compliance.
 
-**The people behind Vent Trade.**
+We're going to talk with them. About the real barriers. The access problems. The budget fights. The practical solutions that actually work in the real world.
 
-We often talk about products and compliance, but fire safety is fundamentally a people business — because the stakes are always human.
+If you manage buildings — or advise people who do — come and find us at the NEC.
 
-This week we're introducing the team who'll be at the Fire Safety Event Show representing Vent Trade.
+This is the conversation that saves lives.
 
-From our technical specification engineers to our project delivery leads, every person on our stand has hands-on experience in smoke ventilation and fire safety ventilation systems. They've been on site, they've read the reports, and they've seen what happens when systems aren't right.
-
-Come and meet them. Ask the hard questions. That's exactly why we'll be there.
-
-Stand details dropping tomorrow.
-
-#TeamVentTrade #FireSafety #SmokeVentilation #FireSafetyEvent #NEC
+#FireDampers #FireSafety #ComplianceMatters #VentTrade #FireSafetyEvent #BuildingSafety
 
 ---
 
-## Day 4 — Where You'll Find Us
+## Day 5 — The People You'll Meet on Our Stand
 
-**Stand [X] — NEC Birmingham. Come and find us.**
+**Fire safety is a technical discipline. But it's a human mission.**
 
-We're now just four days out from the Fire Safety Event Show, and we're ready.
+Every smoke ventilation system we specify, every fire damper solution we deliver, every AOV installation we support — behind all of it is a simple reason:
 
-Here's what you can expect when you visit the Vent Trade stand:
+People need to get out safely.
 
-- Live product demonstrations of our smoke ventilation and AOV systems
-- One-to-one technical consultations with our specification team
-- Guidance on compliance with BS 9999, BS EN 12101, and the Fire Safety Act 2021
-- A practical look at our retrofit solutions for legacy buildings
+That's who the Vent Trade team are this week at the Fire Safety Event Show.
 
-No queues. No hard sell. Just technical expertise, freely shared.
+They're not there to hand you a brochure and move on to the next badge scan.
 
-If you'd like to pre-book a slot with one of our engineers, drop us a message now and we'll get it in the diary.
+They're engineers who've been on site when systems failed commissioning and had to find out why.
+They're specification leads who've sat in design reviews and pushed back when smoke control was being value-engineered into irrelevance.
+They're problem-solvers who know the standards — BS 9999, BS EN 12101, the Fire Safety Act 2021 — and more importantly, know what those standards mean in practice.
 
-See you there.
+Come and meet them.
 
-#FireSafetyEvent #VentTrade #AOV #SmokeControl #FireCompliance
+Bring a project that's giving you trouble.
+Bring a compliance question nobody's given you a straight answer on.
+Bring your scepticism — that's fine too.
 
----
+Stand details tomorrow.
 
-## Day 3 — Why Specification Matters
-
-**The best fire safety ventilation system is the one specified correctly from the start.**
-
-Too often, smoke control is treated as a box-ticking exercise — value-engineered at the last minute, under-specified, or misaligned with the building's actual risk profile.
-
-The consequences show up later. In failed commissioning. In systems that can't be maintained. In buildings that don't perform the way they should under fire conditions.
-
-At Vent Trade, we work with architects, fire engineers, M&E consultants, and contractors to make sure the specification process is right — before a single component is ordered.
-
-If you're working on a project where smoke ventilation is in scope, come and talk to our team at the Fire Safety Event Show this week. Bring your drawings. Bring your questions.
-
-We'll bring the answers.
-
-#FireEngineering #SmokeVentilation #MEConsultants #BuildingSafety #VentTrade
+#TeamVentTrade #FireSafety #SmokeVentilation #FireSafetyEvent #NEC #PeopleWhoGiveADamn
 
 ---
 
-## Day 2 — The Day Before
+## Day 4 — Here's Where to Find Us
 
-**Tomorrow we open the doors. Here's what's on our mind.**
+**Stand [X]. NEC Birmingham. Four days away.**
 
-The Fire Safety Event Show brings together the people who shape how the built environment responds to fire. Installers, specifiers, consultants, enforcement officers, facilities managers, building owners.
+Here's what's waiting for you when you visit the Vent Trade stand at the Fire Safety Event Show:
 
-It's one of the few places where the whole supply chain is in the same room.
+🔥 **Live demonstrations** — see our smoke ventilation and AOV systems working, not just described
 
-That matters, because fire safety doesn't happen in silos. A system specified well but installed poorly fails. A system installed well but never maintained fails. A building managed without proper fire strategy fails.
+🔥 **One-to-one technical sessions** — our specification engineers, no queue, no time limit
 
-The conversations we have at events like this — the honest ones, the difficult ones — are what move the industry forward.
+🔥 **Compliance clarity** — straight answers on BS 9999, BS EN 12101, and the Fire Safety Act 2021
 
-The Vent Trade team is ready for those conversations. We'll be at the NEC from the moment the doors open.
+🔥 **Retrofit solutions** — a practical look at how we solve smoke control challenges in legacy buildings that were never designed for modern requirements
 
-If you're going tomorrow, message us and let's make sure we connect.
+No hard sell. No corporate script. Just the people who know this industry inside out, making themselves available to talk.
 
-#FireSafetyEvent #VentTrade #FireSafety #BuiltEnvironment #Tomorrow
+If you want to guarantee time with one of our engineers, message us now and we'll lock it in before the doors open.
+
+Otherwise — we'll see you on the floor.
+
+Stand [X]. Come and find us.
+
+#FireSafetyEvent #VentTrade #AOV #SmokeControl #FireCompliance #NEC
 
 ---
 
-## Day 1 — Show Day
+## Day 3 — The Specification Problem Nobody Wants to Admit
 
-**We're live at the Fire Safety Event Show. Come and find us.**
+**The smoke control system failed. The question is: when did it actually go wrong?**
 
-The doors are open. The Vent Trade team is on stand and ready to talk.
+Not at installation.
+Not at commissioning.
 
-Today is about connection — with the people specifying life-safety systems, managing buildings, enforcing compliance, and driving standards forward across the industry.
+The failure happened months earlier — in a design meeting where smoke ventilation was deprioritised.
+In a value engineering session where the system was stripped back to the minimum viable box-tick.
+In a specification that was copied from a previous project without checking whether it suited this building's actual risk profile.
 
-If you're here at the NEC today, here's how to make the most of your visit to us:
+By the time someone's on site trying to make it work, the decisions that matter have already been made.
 
-- Ask about our AOV and smoke ventilation product range
-- Talk through a live project with our technical team
-- Get clear, practical advice on compliance and specification
-- Find out how we support contractors and consultants from design through to handover
+This is the part of fire safety that keeps us up at night.
 
-Fire safety is too important for vague answers. We give you straight ones.
+Because getting specification right isn't glamorous. It doesn't photograph well. It doesn't make the case studies. But it is the single most important factor in whether a life-safety system actually does what it's supposed to do when a building is on fire.
 
-Find us at Stand [X]. We'll be here all day.
+At Vent Trade, we get involved early — at RIBA Stage 2 if we can — because that's where the real work happens.
 
-#FireSafetyEvent #VentTrade #FireSafety #SmokeControl #NEC #ShowDay
+If you're an architect, fire engineer, or M&E consultant working on a project where smoke ventilation is in scope, come and talk to us at the Fire Safety Event Show this week.
+
+Bring the drawings. Bring the awkward questions.
+
+We'll bring the answers — and the experience to back them up.
+
+#FireEngineering #SmokeVentilation #MEConsultants #BuildingSafety #VentTrade #RIBAStages
+
+---
+
+## Day 2 — The Eve of the Show
+
+**Tomorrow, the best minds in UK fire safety will be in one building.**
+
+Think about that for a second.
+
+Installers. Specifiers. Consultants. Enforcement officers. Facilities managers. Building owners. Manufacturers. Regulators.
+
+The entire supply chain — in the same room.
+
+That doesn't happen often. And when it does, the conversations that take place matter far beyond the show floor.
+
+Fire safety fails when it works in silos. The specifier doesn't know what the installer is going to face. The installer doesn't know what the facilities team can actually maintain. The facilities team doesn't know what the enforcement officer is going to be looking for in three years' time.
+
+The Fire Safety Event Show breaks those silos — for two days, at least.
+
+We're going tomorrow not just to talk about Vent Trade, but to listen. To hear what's changing. What's still broken. Where the industry is making progress and where it's still falling short.
+
+If you're heading to the NEC tomorrow, message us tonight. Let's find time to connect properly — not a thirty-second handshake between sessions, but a real conversation.
+
+The Vent Trade team will be there from the moment the doors open.
+
+See you tomorrow.
+
+#FireSafetyEvent #VentTrade #FireSafety #BuiltEnvironment #NEC #SeeYouThere
+
+---
+
+## Day 1 — We're Live. Come and Find Us.
+
+**The doors are open.**
+
+The Vent Trade team is on Stand [X] at the Fire Safety Event Show — and today is for you.
+
+If you specify smoke ventilation systems and want a second opinion on a live project — come and find us.
+
+If you manage a building estate and you're not confident your fire dampers are compliant — come and find us.
+
+If you're a contractor who's been handed a spec that doesn't add up — come and find us.
+
+If you've never worked with Vent Trade but you've heard the name and wondered what we actually do — come and find us.
+
+We have engineers on stand all day. We have product demos running. We have real answers to real questions — no filler, no stalling, no "we'll send you a brochure."
+
+Fire safety is too important for vague.
+
+Stand [X]. NEC Birmingham. We're here all day.
+
+See you on the floor. 🔥
+
+#FireSafetyEvent #VentTrade #FireSafety #SmokeControl #NEC #ShowDay #FireDampers #AOV
