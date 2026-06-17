@@ -1,0 +1,47 @@
+{
+  "_comment": "Maps each salesperson across data sources. 'aircallUserId' is the numeric Aircall user id; 'spreadsheetName' must match the Name cell in the sales .xlsx (case/whitespace-insensitive). If 'spreadsheetName' is omitted it defaults to 'name'.",
+  "staff": [
+    {
+      "id": "jane",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "aircallUserId": 1001,
+      "spreadsheetName": "Jane Doe"
+    },
+    {
+      "id": "marcus",
+      "name": "Marcus Lee",
+      "email": "marcus.lee@example.com",
+      "aircallUserId": 1002,
+      "spreadsheetName": "Marcus Lee"
+    },
+    {
+      "id": "aisha",
+      "name": "Aisha Khan",
+      "email": "aisha.khan@example.com",
+      "aircallUserId": 1003,
+      "spreadsheetName": "Aisha Khan"
+    },
+    {
+      "id": "tom",
+      "name": "Tom Brennan",
+      "email": "tom.brennan@example.com",
+      "aircallUserId": 1004,
+      "spreadsheetName": "Tom Brennan"
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia Rossi",
+      "email": "sofia.rossi@example.com",
+      "aircallUserId": 1005,
+      "spreadsheetName": "Sofia Rossi"
+    },
+    {
+      "id": "priya",
+      "name": "Priya Patel",
+      "email": "priya.patel@example.com",
+      "aircallUserId": 1006,
+      "spreadsheetName": "Priya Patel"
+    }
+  ]
+}

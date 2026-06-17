@@ -1,0 +1,55 @@
+# KPI Wallboard — full stack (Go backend + Svelte/D3 frontend).
+#
+#   docker compose up --build
+#
+# Then open the wallboard at http://localhost:3000 and put the browser into
+# fullscreen on the office TV. With no Aircall credentials set, the backend
+# serves deterministic demo data so the board works immediately.
+#
+# Compose automatically reads a sibling ".env" file for the variables below.
+# Copy .env.example to .env and fill in real values to go live.
+
+services:
+  backend:
+    build:
+      context: ./backend
+      args:
+        VERSION: compose
+    environment:
+      PORT: "8080"
+      # Leave the Aircall vars empty to run in demo mode.
+      AIRCALL_API_ID: "${AIRCALL_API_ID:-}"
+      AIRCALL_API_TOKEN: "${AIRCALL_API_TOKEN:-}"
+      AIRCALL_BASE_URL: "${AIRCALL_BASE_URL:-https://api.aircall.io/v1}"
+      SALES_XLSX_PATH: "/app/data/sales-sample.xlsx"
+      STAFF_MAPPING_PATH: "/app/config/staff-mapping.json"
+      REFRESH_INTERVAL_SECONDS: "${REFRESH_INTERVAL_SECONDS:-300}"
+      DASHBOARD_TITLE: "${DASHBOARD_TITLE:-Vent Sales}"
+      DASHBOARD_TIMEZONE: "${DASHBOARD_TIMEZONE:-Europe/London}"
+      WEIGHT_SALES: "${WEIGHT_SALES:-0.5}"
+      WEIGHT_CALLS_OUT: "${WEIGHT_CALLS_OUT:-0.25}"
+      WEIGHT_CALLS_IN: "${WEIGHT_CALLS_IN:-0.10}"
+      WEIGHT_MINUTES: "${WEIGHT_MINUTES:-0.15}"
+      # Excel column names (override to match your spreadsheet).
+      EXCEL_COL_NAME: "${EXCEL_COL_NAME:-Name}"
+      EXCEL_COL_SALES_COUNT: "${EXCEL_COL_SALES_COUNT:-Sales Count}"
+      EXCEL_COL_SALES_VALUE: "${EXCEL_COL_SALES_VALUE:-Sales Value}"
+      EXCEL_COL_TARGET: "${EXCEL_COL_TARGET:-Target}"
+    volumes:
+      # Edit the staff mapping and drop in your own spreadsheet without
+      # rebuilding the image. Uploads via the API also land here.
+      - ./backend/config:/app/config
+      - ./backend/data:/app/data
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      - backend
+    ports:
+      # Open the wallboard at http://localhost:3000
+      - "3000:80"
+    restart: unless-stopped

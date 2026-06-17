@@ -1,0 +1,102 @@
+:root {
+  /* Color system - dark, high-contrast TV theme */
+  --bg-0: #0a0e17;
+  --bg-1: #111726;
+  --bg-2: #18203360;
+  --card: #161d2e;
+  --card-2: #1c2540;
+  --border: #27314a;
+  --text: #f2f5fb;
+  --text-dim: #9aa6c2;
+  --text-faint: #5c6788;
+
+  --accent: #4f8cff;
+  --accent-2: #38e0c0;
+  --gold: #ffcf3f;
+  --gold-deep: #f5a623;
+  --green: #2fd27a;
+  --amber: #ffb13d;
+  --red: #ff5468;
+  --callin: #4f8cff;
+  --callout: #38e0c0;
+
+  --gap: clamp(0.5rem, 0.9vw, 1.1rem);
+  --radius: clamp(0.6rem, 1vw, 1.1rem);
+  --shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.45);
+
+  /* Fluid base font scales between 1080p and 4K */
+  font-size: clamp(15px, 0.95vw, 30px);
+
+  color-scheme: dark;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-0);
+  color: var(--text);
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: radial-gradient(
+      1200px 800px at 80% -10%,
+      rgba(79, 140, 255, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 700px at -10% 110%,
+      rgba(56, 224, 192, 0.08),
+      transparent 55%
+    ),
+    var(--bg-0);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+.muted {
+  color: var(--text-dim);
+}
+
+.faint {
+  color: var(--text-faint);
+}
+
+/* Generic card */
+.card {
+  background: linear-gradient(180deg, var(--card-2), var(--card));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Scrollbars hidden on a wallboard */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
