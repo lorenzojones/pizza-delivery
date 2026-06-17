@@ -24,7 +24,7 @@ services:
       SALES_XLSX_PATH: "/app/data/sales-sample.xlsx"
       STAFF_MAPPING_PATH: "/app/config/staff-mapping.json"
       REFRESH_INTERVAL_SECONDS: "${REFRESH_INTERVAL_SECONDS:-300}"
-      DASHBOARD_TITLE: "${DASHBOARD_TITLE:-Sales Wallboard}"
+      DASHBOARD_TITLE: "${DASHBOARD_TITLE:-Vent Sales}"
       DASHBOARD_TIMEZONE: "${DASHBOARD_TIMEZONE:-Europe/London}"
       WEIGHT_SALES: "${WEIGHT_SALES:-0.5}"
       WEIGHT_CALLS_OUT: "${WEIGHT_CALLS_OUT:-0.25}"

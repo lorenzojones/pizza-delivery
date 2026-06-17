@@ -74,7 +74,7 @@ func Load() (*Config, error) {
 		AircallBaseURL:   getenv("AIRCALL_BASE_URL", "https://api.aircall.io/v1"),
 		SalesXLSXPath:    getenv("SALES_XLSX_PATH", "data/sales-sample.xlsx"),
 		StaffMappingPath: getenv("STAFF_MAPPING_PATH", "config/staff-mapping.json"),
-		DashboardTitle:   getenv("DASHBOARD_TITLE", "Sales Wallboard"),
+		DashboardTitle:   getenv("DASHBOARD_TITLE", "Vent Sales"),
 		Timezone:         getenv("DASHBOARD_TIMEZONE", "Europe/London"),
 		Weights: models.ScoreWeights{
 			Sales:          getenvFloat("WEIGHT_SALES", 0.50),

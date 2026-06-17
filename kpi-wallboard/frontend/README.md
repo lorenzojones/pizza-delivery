@@ -1,4 +1,4 @@
-# Sales Wallboard — Frontend
+# Vent Sales — Frontend
 
 A real-time, always-on **TV wallboard** for a sales team. Landscape 16:9,
 glanceable in under 5 seconds: a competitive leaderboard, a top-performer hero

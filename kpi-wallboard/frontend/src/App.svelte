@@ -29,7 +29,7 @@
   $: error = state.error;
 
   // Derived flags
-  $: title = (data && data.title) || 'Sales Wallboard';
+  $: title = (data && data.title) || 'Vent Sales';
   $: topLevelStale = !!(data && data.stale) || !online;
   $: sourceStatus = data && data.sourceStatus;
   $: demo = isDemo(sourceStatus);

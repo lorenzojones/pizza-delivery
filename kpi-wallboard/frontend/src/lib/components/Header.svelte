@@ -2,7 +2,7 @@
   import SourceBadge from './SourceBadge.svelte';
   import { longDate, clock, relativeAgo } from '../format.js';
 
-  export let title = 'Sales Wallboard';
+  export let title = 'Vent Sales';
   export let lastUpdated = null;
   export let sourceStatus = null;
   export let online = true;
