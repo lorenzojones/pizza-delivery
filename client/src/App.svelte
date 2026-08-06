@@ -9,6 +9,7 @@
 
   const routes = {
     '/': Home,
+    '/menu': RestaurantDetail,
     '/restaurants': RestaurantList,
     '/restaurant/:id': RestaurantDetail,
     '/checkout': Checkout,
@@ -16,7 +17,7 @@
   };
 </script>
 
-<div class="min-h-screen bg-je-grey-light">
+<div class="min-h-screen bg-coconut">
   <Header />
   <Router {routes} />
 </div>

@@ -23,7 +23,6 @@ app.get('/api/restaurants', (req, res) => {
   const { q, cuisine, sort, minRating } = req.query;
   let results = [...restaurants];
 
-  // Text search
   if (q) {
     const query = q.toLowerCase();
     results = results.filter(r =>
@@ -33,39 +32,26 @@ app.get('/api/restaurants', (req, res) => {
     );
   }
 
-  // Filter by cuisine
   if (cuisine) {
     results = results.filter(r =>
       r.cuisine.some(c => c.toLowerCase() === cuisine.toLowerCase())
     );
   }
 
-  // Filter by minimum rating
   if (minRating) {
     results = results.filter(r => r.rating >= parseFloat(minRating));
   }
 
-  // Sort
   if (sort === 'rating') {
     results.sort((a, b) => b.rating - a.rating);
-  } else if (sort === 'deliveryFee') {
-    results.sort((a, b) => a.deliveryFee - b.deliveryFee);
-  } else if (sort === 'deliveryTime') {
+  } else if (sort === 'price') {
     results.sort((a, b) => {
-      const aTime = parseInt(a.deliveryTime);
-      const bTime = parseInt(b.deliveryTime);
-      return aTime - bTime;
-    });
-  } else {
-    // Default: promoted first, then by rating
-    results.sort((a, b) => {
-      if (a.promoted && !b.promoted) return -1;
-      if (!a.promoted && b.promoted) return 1;
-      return b.rating - a.rating;
+      const aAvg = a.menu.flatMap(c => c.items).reduce((s, i) => s + i.price, 0) / a.menu.flatMap(c => c.items).length;
+      const bAvg = b.menu.flatMap(c => c.items).reduce((s, i) => s + i.price, 0) / b.menu.flatMap(c => c.items).length;
+      return aAvg - bAvg;
     });
   }
 
-  // Return summary data (no menu)
   const summaries = results.map(({ menu, ...rest }) => rest);
   res.json(summaries);
 });
@@ -74,7 +60,7 @@ app.get('/api/restaurants', (req, res) => {
 app.get('/api/restaurants/:id', (req, res) => {
   const restaurant = restaurants.find(r => r.id === req.params.id);
   if (!restaurant) {
-    return res.status(404).json({ error: 'Restaurant not found' });
+    return res.status(404).json({ error: 'Not found' });
   }
   res.json(restaurant);
 });
@@ -92,16 +78,8 @@ app.post('/api/orders', (req, res) => {
     return res.status(404).json({ error: 'Restaurant not found' });
   }
 
-  // Calculate totals
   const subtotal = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  const deliveryFee = restaurant.deliveryFee;
-  const total = subtotal + deliveryFee;
-
-  if (subtotal < restaurant.minOrder) {
-    return res.status(400).json({
-      error: `Minimum order is £${restaurant.minOrder.toFixed(2)}`
-    });
-  }
+  const total = subtotal;
 
   const order = {
     id: uuidv4().slice(0, 8).toUpperCase(),
@@ -110,23 +88,20 @@ app.post('/api/orders', (req, res) => {
     items,
     customer,
     address,
-    paymentMethod: paymentMethod || 'card',
+    paymentMethod: paymentMethod || 'cash',
     subtotal,
-    deliveryFee,
+    deliveryFee: 0,
     total,
     status: 'confirmed',
     statusHistory: [
-      { status: 'confirmed', time: new Date().toISOString(), message: 'Order confirmed' }
+      { status: 'confirmed', time: new Date().toISOString(), message: 'Order confirmed! We\'re on it 🤙' }
     ],
-    estimatedDelivery: restaurant.deliveryTime,
+    estimatedDelivery: '10-15 min',
     createdAt: new Date().toISOString()
   };
 
   orders.set(order.id, order);
-
-  // Simulate order progress
   simulateOrderProgress(order.id);
-
   res.status(201).json(order);
 });
 
@@ -142,10 +117,10 @@ app.get('/api/orders/:id', (req, res) => {
 // Simulate order lifecycle
 function simulateOrderProgress(orderId) {
   const stages = [
-    { delay: 15000, status: 'preparing', message: 'Restaurant is preparing your order' },
-    { delay: 45000, status: 'ready', message: 'Your order is ready for pickup' },
-    { delay: 60000, status: 'delivering', message: 'Your rider is on the way' },
-    { delay: 90000, status: 'delivered', message: 'Your order has been delivered. Enjoy!' }
+    { delay: 10000, status: 'preparing', message: 'Blending your juice fresh! 🍹' },
+    { delay: 25000, status: 'ready', message: 'Your order is ready for pickup! 🤙' },
+    { delay: 40000, status: 'delivering', message: 'Heading your way on the beach! 🏃' },
+    { delay: 55000, status: 'delivered', message: 'Enjoy your juice! See you next time 🌊' }
   ];
 
   stages.forEach(({ delay, status, message }) => {
@@ -163,11 +138,11 @@ function simulateOrderProgress(orderId) {
   });
 }
 
-// SPA fallback - serve index.html for all non-API routes
+// SPA fallback
 app.get('/{*splat}', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'client', 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
-  console.log(`Pizza Delivery API running on http://localhost:${PORT}`);
+  console.log(`Eno's Shack Juice Bar running on http://localhost:${PORT}`);
 });

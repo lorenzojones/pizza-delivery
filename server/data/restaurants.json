@@ -1,309 +1,63 @@
 [
   {
-    "id": "papa-luigis",
-    "name": "Papa Luigi's Pizzeria",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=250&fit=crop",
-    "cuisine": ["Pizza", "Italian"],
-    "rating": 4.7,
-    "reviewCount": 342,
-    "deliveryTime": "25-35 min",
-    "deliveryFee": 1.99,
-    "minOrder": 10.00,
-    "distance": "1.2 mi",
-    "address": "42 High Street, London",
-    "isOpen": true,
-    "promoted": true,
-    "tags": ["Popular", "Top Rated"],
-    "menu": [
-      {
-        "category": "Popular",
-        "items": [
-          { "id": "pl-1", "name": "Margherita", "description": "Classic tomato sauce, mozzarella, fresh basil", "price": 8.99, "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop", "popular": true },
-          { "id": "pl-2", "name": "Pepperoni Feast", "description": "Double pepperoni, mozzarella, tomato sauce", "price": 11.99, "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200&h=200&fit=crop", "popular": true },
-          { "id": "pl-3", "name": "Meat Lovers", "description": "Pepperoni, sausage, ham, bacon, mozzarella", "price": 13.49, "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=200&h=200&fit=crop", "popular": true }
-        ]
-      },
-      {
-        "category": "Classic Pizzas",
-        "items": [
-          { "id": "pl-4", "name": "Hawaiian", "description": "Ham, pineapple, mozzarella, tomato sauce", "price": 10.99, "image": null },
-          { "id": "pl-5", "name": "Veggie Supreme", "description": "Mushrooms, peppers, onions, olives, sweetcorn, mozzarella", "price": 10.49, "image": null },
-          { "id": "pl-6", "name": "BBQ Chicken", "description": "Grilled chicken, BBQ sauce, red onion, mozzarella", "price": 11.99, "image": null },
-          { "id": "pl-7", "name": "Four Cheese", "description": "Mozzarella, cheddar, parmesan, gorgonzola", "price": 11.49, "image": null },
-          { "id": "pl-8", "name": "Diavola", "description": "Spicy salami, chilli flakes, mozzarella, tomato sauce", "price": 11.49, "image": null }
-        ]
-      },
-      {
-        "category": "Sides",
-        "items": [
-          { "id": "pl-9", "name": "Garlic Bread", "description": "Freshly baked with garlic butter", "price": 3.49, "image": null },
-          { "id": "pl-10", "name": "Cheesy Garlic Bread", "description": "Garlic bread loaded with mozzarella", "price": 4.49, "image": null },
-          { "id": "pl-11", "name": "Chicken Wings (8pc)", "description": "Crispy wings with your choice of sauce", "price": 5.99, "image": null },
-          { "id": "pl-12", "name": "Mozzarella Sticks (6pc)", "description": "Deep fried mozzarella with marinara dip", "price": 4.99, "image": null },
-          { "id": "pl-13", "name": "Coleslaw", "description": "Creamy homemade coleslaw", "price": 1.99, "image": null }
-        ]
-      },
-      {
-        "category": "Desserts",
-        "items": [
-          { "id": "pl-14", "name": "Chocolate Fudge Cake", "description": "Rich chocolate cake with fudge topping", "price": 4.49, "image": null },
-          { "id": "pl-15", "name": "Tiramisu", "description": "Classic Italian coffee dessert", "price": 4.99, "image": null },
-          { "id": "pl-16", "name": "Cookie Dough Bites", "description": "Warm chocolate chip cookie dough bites", "price": 3.99, "image": null }
-        ]
-      },
-      {
-        "category": "Drinks",
-        "items": [
-          { "id": "pl-17", "name": "Coca-Cola (330ml)", "description": "", "price": 1.49, "image": null },
-          { "id": "pl-18", "name": "Diet Coke (330ml)", "description": "", "price": 1.49, "image": null },
-          { "id": "pl-19", "name": "Fanta Orange (330ml)", "description": "", "price": 1.49, "image": null },
-          { "id": "pl-20", "name": "Water (500ml)", "description": "", "price": 0.99, "image": null },
-          { "id": "pl-21", "name": "1.5L Coca-Cola", "description": "Sharing size", "price": 2.99, "image": null }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "pizza-palace",
-    "name": "Pizza Palace",
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=250&fit=crop",
-    "cuisine": ["Pizza", "American"],
-    "rating": 4.3,
-    "reviewCount": 218,
-    "deliveryTime": "30-45 min",
-    "deliveryFee": 2.49,
-    "minOrder": 12.00,
-    "distance": "2.1 mi",
-    "address": "15 King's Road, London",
-    "isOpen": true,
-    "promoted": false,
-    "tags": ["Free item"],
-    "menu": [
-      {
-        "category": "Popular",
-        "items": [
-          { "id": "pp-1", "name": "NYC Pepperoni", "description": "New York style pepperoni with extra cheese", "price": 12.99, "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200&h=200&fit=crop", "popular": true },
-          { "id": "pp-2", "name": "The Palace Special", "description": "Pepperoni, sausage, mushrooms, peppers, onions", "price": 14.99, "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=200&h=200&fit=crop", "popular": true }
-        ]
-      },
-      {
-        "category": "Gourmet Pizzas",
-        "items": [
-          { "id": "pp-3", "name": "Truffle Mushroom", "description": "Wild mushrooms, truffle oil, fontina, thyme", "price": 14.99, "image": null },
-          { "id": "pp-4", "name": "Prosciutto & Rocket", "description": "Parma ham, rocket, parmesan shavings, olive oil", "price": 13.99, "image": null },
-          { "id": "pp-5", "name": "Goat Cheese & Caramelised Onion", "description": "Creamy goat cheese, sweet onion, walnuts", "price": 13.49, "image": null }
-        ]
-      },
-      {
-        "category": "Classic Pizzas",
-        "items": [
-          { "id": "pp-6", "name": "Margherita", "description": "San Marzano tomatoes, fior di latte, basil", "price": 9.99, "image": null },
-          { "id": "pp-7", "name": "Americana", "description": "Pepperoni, mozzarella, tomato sauce", "price": 11.49, "image": null },
-          { "id": "pp-8", "name": "Veggie Delight", "description": "Roasted vegetables, pesto, mozzarella", "price": 10.99, "image": null }
-        ]
-      },
-      {
-        "category": "Sides & Drinks",
-        "items": [
-          { "id": "pp-9", "name": "Loaded Fries", "description": "Fries topped with cheese and jalapeños", "price": 4.99, "image": null },
-          { "id": "pp-10", "name": "Onion Rings", "description": "Beer battered onion rings", "price": 3.99, "image": null },
-          { "id": "pp-11", "name": "Coca-Cola (330ml)", "description": "", "price": 1.49, "image": null },
-          { "id": "pp-12", "name": "Sprite (330ml)", "description": "", "price": 1.49, "image": null }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "napoli-express",
-    "name": "Napoli Express",
-    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&h=250&fit=crop",
-    "cuisine": ["Pizza", "Italian"],
-    "rating": 4.8,
-    "reviewCount": 567,
-    "deliveryTime": "20-30 min",
-    "deliveryFee": 0.99,
-    "minOrder": 8.00,
-    "distance": "0.8 mi",
-    "address": "7 Station Road, London",
-    "isOpen": true,
-    "promoted": true,
-    "tags": ["Fastest Delivery", "Hyper Popular"],
-    "menu": [
-      {
-        "category": "Popular",
-        "items": [
-          { "id": "ne-1", "name": "Napoletana", "description": "Anchovies, capers, olives, tomato, mozzarella", "price": 10.99, "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop", "popular": true },
-          { "id": "ne-2", "name": "Calzone", "description": "Folded pizza with ricotta, ham, mushrooms", "price": 11.99, "image": "https://images.unsplash.com/photo-1536964549204-cce9eab227bd?w=200&h=200&fit=crop", "popular": true },
-          { "id": "ne-3", "name": "Quattro Stagioni", "description": "Four seasons: artichokes, ham, mushrooms, olives", "price": 12.99, "image": null, "popular": true }
-        ]
-      },
-      {
-        "category": "Wood-Fired Pizzas",
-        "items": [
-          { "id": "ne-4", "name": "Margherita DOC", "description": "Buffalo mozzarella, San Marzano tomatoes, fresh basil", "price": 9.99, "image": null },
-          { "id": "ne-5", "name": "Marinara", "description": "Tomato, garlic, oregano, extra virgin olive oil", "price": 7.99, "image": null },
-          { "id": "ne-6", "name": "Capricciosa", "description": "Ham, mushrooms, artichokes, olives, mozzarella", "price": 12.49, "image": null },
-          { "id": "ne-7", "name": "Prosciutto e Funghi", "description": "Parma ham, wild mushrooms, mozzarella", "price": 12.99, "image": null },
-          { "id": "ne-8", "name": "Diavola", "description": "Spicy nduja, chilli, honey drizzle, mozzarella", "price": 11.99, "image": null }
-        ]
-      },
-      {
-        "category": "Pasta",
-        "items": [
-          { "id": "ne-9", "name": "Spaghetti Bolognese", "description": "Classic meat ragù with parmesan", "price": 9.99, "image": null },
-          { "id": "ne-10", "name": "Penne Arrabbiata", "description": "Spicy tomato sauce with garlic and chilli", "price": 8.99, "image": null },
-          { "id": "ne-11", "name": "Carbonara", "description": "Pancetta, egg, parmesan, black pepper", "price": 10.99, "image": null }
-        ]
-      },
-      {
-        "category": "Desserts & Drinks",
-        "items": [
-          { "id": "ne-12", "name": "Nutella Pizza", "description": "Sweet pizza dough with Nutella and strawberries", "price": 5.99, "image": null },
-          { "id": "ne-13", "name": "Panna Cotta", "description": "Vanilla panna cotta with berry coulis", "price": 4.99, "image": null },
-          { "id": "ne-14", "name": "Peroni (330ml)", "description": "Italian lager", "price": 3.49, "image": null },
-          { "id": "ne-15", "name": "San Pellegrino (500ml)", "description": "Sparkling water", "price": 1.99, "image": null }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "slice-heaven",
-    "name": "Slice of Heaven",
-    "image": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=400&h=250&fit=crop",
-    "cuisine": ["Pizza", "American"],
-    "rating": 4.1,
-    "reviewCount": 156,
-    "deliveryTime": "35-50 min",
-    "deliveryFee": 2.99,
-    "minOrder": 15.00,
-    "distance": "3.4 mi",
-    "address": "88 Broadway, London",
-    "isOpen": true,
-    "promoted": false,
-    "tags": [],
-    "menu": [
-      {
-        "category": "Popular",
-        "items": [
-          { "id": "sh-1", "name": "Supreme", "description": "Everything on it: pepperoni, sausage, mushrooms, peppers, onions, olives", "price": 14.99, "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=200&h=200&fit=crop", "popular": true },
-          { "id": "sh-2", "name": "Buffalo Chicken", "description": "Spicy buffalo chicken, blue cheese, celery", "price": 13.49, "image": null, "popular": true }
-        ]
-      },
-      {
-        "category": "Pizzas",
-        "items": [
-          { "id": "sh-3", "name": "Cheese Pizza", "description": "Simple and classic with extra cheese", "price": 8.99, "image": null },
-          { "id": "sh-4", "name": "Pepperoni", "description": "Loaded with pepperoni", "price": 10.99, "image": null },
-          { "id": "sh-5", "name": "Mushroom & Truffle", "description": "Mixed mushrooms with truffle oil", "price": 12.99, "image": null },
-          { "id": "sh-6", "name": "BBQ Pulled Pork", "description": "Slow-cooked pulled pork, BBQ sauce, pickled onion", "price": 13.99, "image": null }
-        ]
-      },
-      {
-        "category": "Sides",
-        "items": [
-          { "id": "sh-7", "name": "Mac & Cheese Bites", "description": "Deep fried mac and cheese balls", "price": 5.49, "image": null },
-          { "id": "sh-8", "name": "Sweet Potato Fries", "description": "With chipotle mayo", "price": 4.49, "image": null },
-          { "id": "sh-9", "name": "Coca-Cola (330ml)", "description": "", "price": 1.49, "image": null }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "roma-pizza",
-    "name": "Roma Pizza & Grill",
-    "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&h=250&fit=crop",
-    "cuisine": ["Pizza", "Italian", "Kebab"],
-    "rating": 4.5,
-    "reviewCount": 289,
-    "deliveryTime": "25-40 min",
-    "deliveryFee": 1.49,
-    "minOrder": 10.00,
-    "distance": "1.8 mi",
-    "address": "23 Market Street, London",
-    "isOpen": true,
-    "promoted": false,
-    "tags": ["Offers Available"],
-    "menu": [
-      {
-        "category": "Popular",
-        "items": [
-          { "id": "rp-1", "name": "Romana", "description": "Thin crust, ham, mushrooms, anchovies, oregano", "price": 11.49, "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop", "popular": true },
-          { "id": "rp-2", "name": "Doner Kebab", "description": "Seasoned lamb, salad, garlic sauce in pitta", "price": 7.99, "image": null, "popular": true }
-        ]
-      },
-      {
-        "category": "Pizzas",
-        "items": [
-          { "id": "rp-3", "name": "Margherita", "description": "Tomato, mozzarella, basil", "price": 7.99, "image": null },
-          { "id": "rp-4", "name": "Pepperoni", "description": "Classic pepperoni pizza", "price": 9.99, "image": null },
-          { "id": "rp-5", "name": "Tandoori Chicken", "description": "Tandoori chicken, peppers, onion, mozzarella", "price": 11.99, "image": null },
-          { "id": "rp-6", "name": "Meat Feast", "description": "Pepperoni, ham, chicken, beef, mozzarella", "price": 12.99, "image": null }
-        ]
-      },
-      {
-        "category": "Kebabs",
-        "items": [
-          { "id": "rp-7", "name": "Chicken Shish", "description": "Marinated chicken skewers with salad and sauce", "price": 8.99, "image": null },
-          { "id": "rp-8", "name": "Mixed Kebab", "description": "Doner, chicken, lamb kofta with all the trimmings", "price": 10.99, "image": null },
-          { "id": "rp-9", "name": "Lamb Kofta", "description": "Spiced lamb kofta with hummus and salad", "price": 9.49, "image": null }
-        ]
-      },
-      {
-        "category": "Sides & Drinks",
-        "items": [
-          { "id": "rp-10", "name": "Chips", "description": "Freshly fried chips", "price": 2.99, "image": null },
-          { "id": "rp-11", "name": "Cheesy Chips", "description": "Chips with melted cheese", "price": 3.99, "image": null },
-          { "id": "rp-12", "name": "Coca-Cola (330ml)", "description": "", "price": 1.29, "image": null }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "fire-stone",
-    "name": "Firestone Pizza Co.",
-    "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&h=250&fit=crop",
-    "cuisine": ["Pizza", "Gourmet"],
+    "id": "enos-shack",
+    "name": "Eno's Shack",
+    "image": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=600&h=400&fit=crop",
+    "cuisine": ["Juice", "Smoothie", "Acai"],
     "rating": 4.9,
-    "reviewCount": 423,
-    "deliveryTime": "30-40 min",
-    "deliveryFee": 1.99,
-    "minOrder": 12.00,
-    "distance": "1.5 mi",
-    "address": "5 Brick Lane, London",
+    "reviewCount": 287,
+    "deliveryTime": "10-15 min",
+    "deliveryFee": 0,
+    "minOrder": 0,
+    "distance": "Sayulita Centro",
+    "address": "Calle Delfines 12, Sayulita, Nayarit, Mexico",
     "isOpen": true,
     "promoted": true,
-    "tags": ["New", "Award Winner"],
+    "tags": ["Local Favorite", "Fresh Daily"],
     "menu": [
       {
-        "category": "Signature Pizzas",
+        "category": "Signature Juices",
         "items": [
-          { "id": "fs-1", "name": "The Firestone", "description": "Nduja, honey, ricotta, basil, chilli flakes", "price": 14.99, "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&h=200&fit=crop", "popular": true },
-          { "id": "fs-2", "name": "Smoked Salmon", "description": "Smoked salmon, crème fraîche, capers, dill", "price": 15.49, "image": null, "popular": true },
-          { "id": "fs-3", "name": "Fig & Prosciutto", "description": "Fresh figs, prosciutto, gorgonzola, rocket, balsamic", "price": 15.99, "image": null }
+          { "id": "sj-1", "name": "Sayulita Sunrise", "description": "Fresh mango, papaya, orange & a squeeze of lime. Our signature blend.", "price": 85, "image": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=200&h=200&fit=crop", "popular": true, "emoji": "🌅" },
+          { "id": "sj-2", "name": "Pipeline Punch", "description": "Pineapple, guava, passion fruit & coconut water. Ride the wave.", "price": 90, "image": "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=200&h=200&fit=crop", "popular": true, "emoji": "🏄" },
+          { "id": "sj-3", "name": "Green Barrel", "description": "Spinach, cucumber, green apple, celery, ginger & lime.", "price": 95, "image": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=200&h=200&fit=crop", "popular": true, "emoji": "🌊" },
+          { "id": "sj-4", "name": "Riptide Red", "description": "Watermelon, beet, strawberry & fresh mint.", "price": 85, "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=200&h=200&fit=crop", "popular": false, "emoji": "🔴" },
+          { "id": "sj-5", "name": "Coconut Drift", "description": "Fresh young coconut water, pineapple & a hint of vanilla.", "price": 80, "image": "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=200&h=200&fit=crop", "popular": true, "emoji": "🥥" }
         ]
       },
       {
-        "category": "Classic Pizzas",
+        "category": "Smoothie Bowls",
         "items": [
-          { "id": "fs-4", "name": "Margherita", "description": "Buffalo mozzarella, basil, San Marzano tomato", "price": 10.99, "image": null },
-          { "id": "fs-5", "name": "Pepperoni", "description": "Calabrese pepperoni, fior di latte, honey", "price": 12.49, "image": null },
-          { "id": "fs-6", "name": "Funghi", "description": "Wild mushroom medley, truffle cream, parmesan", "price": 13.49, "image": null }
+          { "id": "sb-1", "name": "Acai Shack Bowl", "description": "Organic acai, banana, granola, coconut flakes, honey & mixed berries.", "price": 120, "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=200&h=200&fit=crop", "popular": true, "emoji": "🫐" },
+          { "id": "sb-2", "name": "Tropical Storm Bowl", "description": "Mango, banana, pineapple base topped with kiwi, passion fruit & chia seeds.", "price": 115, "image": "https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=200&h=200&fit=crop", "popular": false, "emoji": "🌴" },
+          { "id": "sb-3", "name": "Pitaya Paradise Bowl", "description": "Dragon fruit, strawberry, banana, topped with granola & fresh mango.", "price": 125, "image": "https://images.unsplash.com/photo-1557800636-894a64c1696f?w=200&h=200&fit=crop", "popular": true, "emoji": "🐉" }
         ]
       },
       {
-        "category": "Small Plates",
+        "category": "Smoothies",
         "items": [
-          { "id": "fs-7", "name": "Burrata", "description": "With heritage tomatoes, basil oil", "price": 7.99, "image": null },
-          { "id": "fs-8", "name": "Arancini (3pc)", "description": "Truffle and mushroom risotto balls", "price": 6.49, "image": null },
-          { "id": "fs-9", "name": "Padron Peppers", "description": "Blistered peppers with sea salt", "price": 4.99, "image": null }
+          { "id": "sm-1", "name": "Surf Session", "description": "Banana, peanut butter, cacao, oat milk & honey. Fuel up.", "price": 95, "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=200&h=200&fit=crop", "popular": true, "emoji": "🏄‍♂️" },
+          { "id": "sm-2", "name": "Mango Tango", "description": "Mango, banana, yogurt & orange juice.", "price": 85, "image": "https://images.unsplash.com/photo-1546173159-315724a31696?w=200&h=200&fit=crop", "popular": false, "emoji": "💃" },
+          { "id": "sm-3", "name": "Berry Wipeout", "description": "Mixed berries, banana, açaí & almond milk.", "price": 90, "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=200&h=200&fit=crop", "popular": false, "emoji": "🤙" },
+          { "id": "sm-4", "name": "Coco Loco", "description": "Coconut milk, banana, dates, cinnamon & a pinch of sea salt.", "price": 90, "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=200&h=200&fit=crop", "popular": false, "emoji": "🥴" }
         ]
       },
       {
-        "category": "Drinks",
+        "category": "Fresh Pressed",
         "items": [
-          { "id": "fs-10", "name": "Craft Lager", "description": "Local craft lager, 330ml", "price": 4.49, "image": null },
-          { "id": "fs-11", "name": "Natural Wine (Glass)", "description": "Ask for today's selection", "price": 6.99, "image": null },
-          { "id": "fs-12", "name": "Limonata", "description": "Homemade lemonade", "price": 2.99, "image": null }
+          { "id": "fp-1", "name": "OJ Classic", "description": "Simple. Fresh squeezed Nayarit oranges.", "price": 55, "image": null, "popular": false, "emoji": "🍊" },
+          { "id": "fp-2", "name": "Ginger Shot", "description": "Concentrated ginger, lemon & cayenne. Wake up call.", "price": 45, "image": null, "popular": true, "emoji": "🔥" },
+          { "id": "fp-3", "name": "Green Machine", "description": "Celery, cucumber, parsley, lemon & green apple.", "price": 75, "image": null, "popular": false, "emoji": "🥒" },
+          { "id": "fp-4", "name": "Carrot Glow", "description": "Carrot, orange, turmeric & ginger. Liquid sunshine.", "price": 70, "image": null, "popular": false, "emoji": "🥕" }
+        ]
+      },
+      {
+        "category": "Extras",
+        "items": [
+          { "id": "ex-1", "name": "Protein Boost", "description": "Add plant-based protein to any drink.", "price": 20, "image": null, "popular": false, "emoji": "💪" },
+          { "id": "ex-2", "name": "CBD Chill Drop", "description": "Add CBD oil for extra relaxation.", "price": 35, "image": null, "popular": false, "emoji": "✌️" },
+          { "id": "ex-3", "name": "Spirulina Boost", "description": "Add spirulina superfood powder.", "price": 25, "image": null, "popular": false, "emoji": "🌿" },
+          { "id": "ex-4", "name": "Granola Cup", "description": "House-made coconut granola side.", "price": 45, "image": null, "popular": false, "emoji": "🥣" }
         ]
       }
     ]

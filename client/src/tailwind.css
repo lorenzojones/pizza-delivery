@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-white text-je-dark font-sans;
+    @apply bg-coconut text-driftwood font-sans;
   }
 }
